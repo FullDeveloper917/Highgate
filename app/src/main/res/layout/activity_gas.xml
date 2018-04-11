@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.highgate.highgate.GasActivity">
+
+
+    <LinearLayout
+        android:id="@+id/layout_Gas"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:background="@color/colorMyBlack"
+        android:weightSum="100"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:id="@+id/menu_pos"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="8">
+
+            <include layout="@layout/menubar" />
+        </LinearLayout>
+
+        <android.support.v4.widget.DrawerLayout
+            android:id="@+id/layoutDrawer"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="92"
+            tools:layout_editor_absoluteY="0dp"
+            tools:layout_editor_absoluteX="8dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="92">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="8"
+                    android:background="@color/colorMyMain"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btnRtn_Gas"
+                        style="@android:style/Widget.DeviceDefault.Button.Borderless"
+                        android:layout_width="50sp"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorMyMain"
+                        android:text="@string/fa_caret_left"
+                        android:padding="0sp"
+                        android:textColor="@color/colorMyBlack"
+                        android:textSize="48sp" />
+
+                    <TextView
+                        android:id="@+id/txtRtn_Gas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorMyMain"
+                        android:gravity="center"
+                        android:text="@string/fa_tachometer"
+                        android:paddingRight="10sp"
+                        android:textColor="@color/colorMyWhite"
+                        android:textSize="28sp" />
+
+                    <TextView
+                        android:id="@+id/txtGasTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="left|center_vertical"
+                        android:background="@color/colorMyMain"
+                        android:text="GAS CHARGE GUIDE"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorMyWhite"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="84"
+                    android:orientation="vertical"
+                    android:weightSum="84">
+
+                    <Button
+                        android:id="@+id/btnSelectVehicleType"
+                        style="@android:style/Widget.DeviceDefault.Button.Borderless"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="6"
+                        android:background="@color/colorMyGray"
+                        android:gravity="left|center_vertical"
+                        android:paddingLeft="50sp"
+                        android:text="@string/gas_menu_1"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorMyBlack"
+                        android:textStyle="bold"/>
+
+                    <android.support.v4.widget.DrawerLayout
+                        android:id="@+id/layoutDrawer_Gas1"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="78">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:weightSum="78">
+
+                            <Button
+                                android:id="@+id/btnSelectManufacturer"
+                                style="@android:style/Widget.DeviceDefault.Button.Borderless"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="6"
+                                android:background="@color/colorMySoftGray"
+                                android:gravity="left|center_vertical"
+                                android:textAllCaps="false"
+                                android:textStyle="bold"
+                                android:paddingLeft="50sp"
+                                android:text="@string/gas_menu_2"
+                                android:textColor="@color/colorMyDarkGray"/>
+
+                            <android.support.v4.widget.DrawerLayout
+                                android:id="@+id/layoutDrawer_Gas2"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="72">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:weightSum="72"
+                                    android:orientation="vertical">
+
+                                    <Button
+                                        android:id="@+id/btnSelectModelYear"
+                                        style="@android:style/Widget.DeviceDefault.Button.Borderless"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="6"
+                                        android:background="@color/colorMySoftGray"
+                                        android:gravity="left|center_vertical"
+                                        android:paddingLeft="50sp"
+                                        android:textAllCaps="false"
+                                        android:text="@string/gas_menu_3"
+                                        android:textColor="@color/colorMyDarkGray"
+                                        android:textStyle="bold"/>
+
+                                    <android.support.v4.widget.DrawerLayout
+                                        android:id="@+id/layoutDrawer_Gas3"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="66">
+
+                                        <RelativeLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent">
+
+                                            <TextView
+                                                android:id="@+id/txtIntroduct_Gas"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:text="@string/gas_introduction"
+                                                android:lineSpacingMultiplier="1.2"
+                                                android:textSize="15sp"
+                                                android:textColor="@color/colorMyBlack"
+                                                android:background="@color/colorMyWhite"
+                                                android:paddingTop="30sp"
+                                                android:paddingLeft="30sp"
+                                                android:paddingRight="30sp"/>
+
+                                            <LinearLayout
+                                                android:id="@+id/layoutGasContent"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:orientation="vertical"
+                                                android:visibility="gone"
+                                                android:weightSum="66">
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="0dp"
+                                                    android:layout_weight="6">
+
+                                                    <TextView
+                                                        android:id="@+id/txtClearGas"
+                                                        android:layout_width="50dp"
+                                                        android:layout_height="match_parent"
+                                                        android:background="@color/colorMyMain"
+                                                        android:gravity="right|center_vertical"
+                                                        android:paddingRight="5sp"
+                                                        android:text="@string/fa_times_circle"
+                                                        android:textColor="@color/colorMyWhite"
+                                                        android:textSize="24sp" />
+
+                                                    <Button
+                                                        android:id="@+id/btnClearGas"
+                                                        style="@android:style/Widget.DeviceDefault.Button.Borderless"
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="match_parent"
+                                                        android:layout_weight="6"
+                                                        android:background="@color/colorMyMain"
+                                                        android:gravity="left|center_vertical"
+                                                        android:paddingLeft="5dp"
+                                                        android:text="Clear selection and make a new search"
+                                                        android:textAllCaps="false"
+                                                        android:textSize="14sp"
+                                                        android:textColor="@color/colorMyWhite" />
+
+                                                </LinearLayout>
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="0dp"
+                                                    android:background="@color/colorMyWhite"
+                                                    android:layout_weight="60">
+
+                                                    <LinearLayout
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="match_parent"
+                                                        android:layout_marginBottom="50dp"
+                                                        android:layout_marginEnd="100dp"
+                                                        android:layout_marginLeft="100dp"
+                                                        android:layout_marginRight="100dp"
+                                                        android:layout_marginStart="100dp"
+                                                        android:layout_marginTop="50dp"
+                                                        android:orientation="vertical"
+                                                        android:weightSum="3"
+                                                        app:layout_constraintBottom_toBottomOf="parent"
+                                                        app:layout_constraintLeft_toLeftOf="parent"
+                                                        app:layout_constraintRight_toRightOf="parent"
+                                                        app:layout_constraintTop_toTopOf="parent">
+
+                                                        <LinearLayout
+                                                            android:layout_width="match_parent"
+                                                            android:layout_height="0sp"
+                                                            android:layout_marginBottom="20dp"
+                                                            android:layout_weight="1"
+                                                            android:orientation="vertical"
+                                                            android:weightSum="2">
+
+                                                            <TextView
+                                                                android:layout_width="match_parent"
+                                                                android:layout_height="0dp"
+                                                                android:layout_weight="1"
+                                                                android:background="@color/colorMySoftGray"
+                                                                android:gravity="center"
+                                                                android:text="GAS CHARGE"
+                                                                android:textColor="@color/colorMyBlack" />
+
+                                                            <TextView
+                                                                android:id="@+id/txtGasCharge"
+                                                                android:layout_width="match_parent"
+                                                                android:layout_height="0dp"
+                                                                android:layout_weight="1"
+                                                                android:background="@color/colorMyGray"
+                                                                android:gravity="center"
+                                                                android:text="GAS CHARGE"
+                                                                android:textColor="@color/colorMyBlack"
+                                                                android:textStyle="bold" />
+
+                                                        </LinearLayout>
+
+
+                                                        <LinearLayout
+                                                            android:layout_width="match_parent"
+                                                            android:layout_height="0sp"
+                                                            android:layout_marginBottom="20dp"
+                                                            android:layout_weight="1"
+                                                            android:orientation="vertical"
+                                                            android:weightSum="2">
+
+                                                            <TextView
+                                                                android:layout_width="match_parent"
+                                                                android:layout_height="0dp"
+                                                                android:layout_weight="1"
+                                                                android:background="@color/colorMySoftGray"
+                                                                android:gravity="center"
+                                                                android:text="OIL TYPE"
+                                                                android:textColor="@color/colorMyBlack" />
+
+                                                            <TextView
+                                                                android:id="@+id/txtOilType"
+                                                                android:layout_width="match_parent"
+                                                                android:layout_height="0dp"
+                                                                android:layout_weight="1"
+                                                                android:background="@color/colorMyGray"
+                                                                android:gravity="center"
+                                                                android:text="OIL TYPE"
+                                                                android:textColor="@color/colorMyBlack"
+                                                                android:textStyle="bold" />
+
+                                                        </LinearLayout>
+
+                                                        <LinearLayout
+                                                            android:layout_width="match_parent"
+                                                            android:layout_height="0sp"
+                                                            android:layout_marginBottom="20dp"
+                                                            android:layout_weight="1"
+                                                            android:orientation="vertical"
+                                                            android:weightSum="2">
+
+                                                            <TextView
+                                                                android:layout_width="match_parent"
+                                                                android:layout_height="0dp"
+                                                                android:layout_weight="1"
+                                                                android:background="@color/colorMySoftGray"
+                                                                android:gravity="center"
+                                                                android:text="OIL QUANTITY"
+                                                                android:textColor="@color/colorMyBlack" />
+
+                                                            <TextView
+                                                                android:id="@+id/txtOilQty"
+                                                                android:layout_width="match_parent"
+                                                                android:layout_height="0dp"
+                                                                android:layout_weight="1"
+                                                                android:background="@color/colorMyGray"
+                                                                android:gravity="center"
+                                                                android:text="OIL QUANTITY"
+                                                                android:textColor="@color/colorMyBlack"
+                                                                android:textStyle="bold" />
+
+                                                        </LinearLayout>
+
+                                                    </LinearLayout>
+
+                                                </LinearLayout>
+
+                                            </LinearLayout>
+
+                                        </RelativeLayout>
+
+
+                                        <ListView
+                                            android:id="@+id/listSelectModelYear"
+                                            android:background="@color/colorMySoftGray"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:fadeScrollbars="false"
+                                            android:fastScrollStyle="@drawable/scrollbar_vertical_thum"
+                                            android:scrollbarTrackVertical="@drawable/scrollbar_vertical_track"
+                                            android:scrollbarThumbVertical="@drawable/scrollbar_vertical_thum"
+                                            android:layout_gravity="left"/>
+
+                                    </android.support.v4.widget.DrawerLayout>
+
+                                </LinearLayout>
+
+                                <ListView
+                                    android:id="@+id/listSelectManufacturer"
+                                    android:background="@color/colorMySoftGray"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:fadeScrollbars="false"
+                                    android:fastScrollStyle="@drawable/scrollbar_vertical_thum"
+                                    android:scrollbarTrackVertical="@drawable/scrollbar_vertical_track"
+                                    android:scrollbarThumbVertical="@drawable/scrollbar_vertical_thum"
+                                    android:layout_gravity="left"/>
+
+                            </android.support.v4.widget.DrawerLayout>
+
+                        </LinearLayout>
+
+                        <ListView
+                            android:id="@+id/listSelectVehicleType"
+                            android:background="@color/colorMySoftGray"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fadeScrollbars="false"
+                            android:fastScrollStyle="@drawable/scrollbar_vertical_thum"
+                            android:scrollbarTrackVertical="@drawable/scrollbar_vertical_track"
+                            android:scrollbarThumbVertical="@drawable/scrollbar_vertical_thum"
+                            android:layout_gravity="left"/>
+
+                    </android.support.v4.widget.DrawerLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <include layout="@layout/menu_content"/>
+        </android.support.v4.widget.DrawerLayout>
+
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

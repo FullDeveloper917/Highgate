@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutOneOrderItem_OrderItem"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="100sp"
+    android:paddingTop="10sp"
+    android:paddingBottom="10sp"
+    android:paddingLeft="20sp"
+    android:paddingRight="10sp"
+    android:background="@color/colorMySoftGray">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txtId_OrderItem"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="left|center"
+            android:text="2824446"
+            android:textColor="@color/colorMyBlack"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtCreateDate_OrderItem"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="right|center"
+            android:text="00-00-0000"
+            android:textColor="@color/colorMyBlack"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Total:"
+            android:textSize="14sp"
+            android:textColor="@color/colorMyBlack"
+            android:gravity="left|center"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/txtOrderTotal_OrderItem"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="$0.00"
+            android:textSize="16sp"
+            android:textColor="@color/colorMyBlack"
+            android:gravity="right|center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Status:"
+            android:textSize="14sp"
+            android:textColor="@color/colorMyBlack"
+            android:gravity="left|center"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/txtStatus_OrderItem"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="right|center"
+            android:text="Completed"
+            android:textColor="@color/colorMyDarkGreen"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+</LinearLayout>

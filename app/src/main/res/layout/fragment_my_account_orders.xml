@@ -1,0 +1,303 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorMyWhite"
+    tools:context="com.highgate.highgate.Fragments.MyAccountOrdersFragment">
+
+    <LinearLayout
+        android:id="@+id/layout_MyAccountOrder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="84">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0sp"
+            android:background="@color/colorMyGray"
+            android:layout_weight="8">
+
+            <TextView
+                android:id="@+id/txtOrderN_MyAccountOrder"
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.2"
+                android:textColor="@color/colorMyBlack"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:text="Order N&#176; "/>
+
+            <TextView
+                android:id="@+id/txtDate_MyAccountOrder"
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.8"
+                android:textColor="@color/colorMyBlack"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:text="Date: 00-00-0000"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0sp"
+            android:layout_weight="14"
+            android:orientation="vertical"
+            android:background="@color/colorMySoftGray"
+            android:layout_marginBottom="5sp"
+            android:padding="10sp">
+
+            <TextView
+                android:id="@+id/txtOrderReference_MyAccountOrder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorMySoftGray"
+                android:text="Order Reference: "
+                android:textColor="@color/colorMyBlack"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:layout_weight="6"/>
+
+            <TextView
+                android:id="@+id/txtDispatchMethod_MyAccountOrder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorMySoftGray"
+                android:text="Dispath Method: "
+                android:textColor="@color/colorMyBlack"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:layout_weight="6"/>
+
+            <TextView
+                android:id="@+id/txtConNoteN_MyAccountOrder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorMySoftGray"
+                android:text="Con Note N&#176;: "
+                android:textColor="@color/colorMyBlack"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:layout_weight="6"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0sp"
+            android:layout_weight="6"
+            android:paddingLeft="10sp"
+            android:paddingRight="10sp"
+            android:layout_marginBottom="5sp"
+            android:background="@color/colorMyGray"
+            android:weightSum="100">
+
+            <TextView
+                android:id="@+id/txtTableLabelPartN_MyAccountOrder"
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:text="Part N&#176;"
+                android:textColor="@color/colorMyBlack"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:paddingLeft="10sp"
+                android:gravity="left|center"
+                android:layout_weight="20"/>
+
+            <TextView
+                android:id="@+id/txtTableLabelDescription_MyAccountOrder"
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:text="Description"
+                android:textColor="@color/colorMyBlack"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:paddingLeft="10sp"
+                android:gravity="left|center"
+                android:layout_weight="33"/>
+
+            <TextView
+                android:id="@+id/txtTableLabelQty_MyAccountOrder"
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:text="Qty"
+                android:textColor="@color/colorMyBlack"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:paddingLeft="10sp"
+                android:gravity="left|center"
+                android:layout_weight="10"/>
+
+            <TextView
+                android:id="@+id/txtTableLabelPrice_MyAccountOrder"
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:text="Price"
+                android:textColor="@color/colorMyBlack"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:paddingLeft="10sp"
+                android:gravity="left|center"
+                android:layout_weight="17"/>
+
+            <TextView
+                android:id="@+id/txtTableLabelSubtotal_MyAccountOrder"
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:text="Subtotal"
+                android:textColor="@color/colorMyBlack"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:paddingLeft="10sp"
+                android:gravity="left|center"
+                android:layout_weight="20"/>
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/listOrders_MyAccountOrder"
+            android:layout_width="match_parent"
+            android:layout_height="0sp"
+            android:background="@color/colorMyWhite"
+            android:layout_weight="42"
+            android:fadeScrollbars="false"
+            android:fastScrollStyle="@drawable/scrollbar_vertical_thum"
+            android:scrollbarThumbVertical="@drawable/scrollbar_vertical_thum"
+            android:scrollbarTrackVertical="@drawable/scrollbar_vertical_track"
+            android:verticalScrollbarPosition="right" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0sp"
+            android:background="@color/colorMyGray"
+            android:layout_weight="14"
+            android:padding="10sp"
+            android:weightSum="100">
+
+            <LinearLayout
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingRight="10sp"
+                android:layout_weight="36">
+
+                <TextView
+                    android:id="@+id/txtLabelSubTotal_MyAccountOrder"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="right|center"
+                    android:text="subtotal"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorMyBlack"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtLabelGst_MyAccountOrder"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="gst"
+                    android:textColor="@color/colorMyBlack"
+                    android:textSize="14sp"
+                    android:textAllCaps="true"
+                    android:textStyle="bold"
+                    android:gravity="right|center"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:id="@+id/txtLabelGrandTotal_MyAccountOrder"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="grand total"
+                    android:textColor="@color/colorMyBlack"
+                    android:textSize="15sp"
+                    android:textAllCaps="true"
+                    android:textStyle="bold"
+                    android:gravity="right|center"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingRight="10sp"
+                android:layout_weight="24">
+
+                <TextView
+                    android:id="@+id/txtSubTotal_MyAccountOrder"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="$"
+                    android:textColor="@color/colorMyBlack"
+                    android:textSize="14sp"
+                    android:gravity="right|center"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:id="@+id/txtGst_MyAccountOrder"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="$"
+                    android:textColor="@color/colorMyBlack"
+                    android:textSize="14sp"
+                    android:gravity="right|center"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:id="@+id/txtGrandTotal_MyAccountOrder"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="$"
+                    android:textColor="@color/colorMyBlack"
+                    android:textSize="16sp"
+                    android:gravity="right|center"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+
+                android:paddingLeft="10sp"
+                android:paddingRight="20sp"
+                android:paddingBottom="5sp"
+                android:paddingTop="5sp"
+                android:layout_weight="40">
+
+                <TextView
+                    android:id="@+id/txtLabelStatus_MyAccountOrder"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="status:"
+                    android:textColor="@color/colorMyWhite"
+                    android:textAllCaps="true"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:gravity="center|bottom"
+                    android:background="@color/colorMySoftBrown"/>
+
+                <TextView
+                    android:id="@+id/txtStatus_MyAccountOrder"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="progressing"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorMyWhite"
+                    android:textSize="14sp"
+                    android:textAllCaps="true"
+                    android:gravity="top|center"
+                    android:background="@color/colorMySoftBrown"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

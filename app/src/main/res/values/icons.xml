@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="fa_bars">&#xf0c9;</string>
+    <string name="fa_shopping_cart">&#xf07a;</string>
+    <string name="fa_phone">&#xf095;</string>
+    <string name="fa_search">&#xf002;</string>
+    <string name="fa_cogs">&#xf085;</string>
+    <string name="fa_cog">&#xf013;</string>
+    <string name="fa_compress">&#xf066;</string>
+    <string name="fa_tachometer">&#xf0e4;</string>
+    <string name="fa_book">&#xf02d;</string>
+    <string name="fa_trash">&#xf1f8;</string>
+    <string name="fa_angle_left">&#xf104;</string>
+    <string name="fa_angle_right">&#xf105;</string>
+    <string name="fa_search_plus">&#xf00e;</string>
+    <string name="fa_times">&#xf00d;</string>
+    <string name="fa_times_circle">&#xf057;</string>
+    <string name="fa_th_large">&#xf009;</string>
+    <string name="fa_user">&#xf007;</string>
+    <string name="fa_mouse_pointer">&#xf245;</string>
+    <string name="fa_check">&#xf00c;</string>
+    <string name="fa_sign_in">&#xf090;&#x2002;</string>
+    <string name="fa_sign_out">&#xf08b;</string>
+    <string name="fa_filter">&#xf0b0;</string>
+    <string name="fa_envelope">&#xf0e0;</string>
+    <string name="fa_key">&#xf084;</string>
+    <string name="fa_caret_left">&#xf0d9;</string>
+    <string name="fa_caret_right">&#xf0da;</string>
+    <string name="fa_expand">&#xf065;</string>
+    <string name="fa_credit_card">&#xf09d;</string>
+</resources>

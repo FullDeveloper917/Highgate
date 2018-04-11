@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.highgate.highgate.ProfileActivity">
+
+
+    <LinearLayout
+        android:id="@+id/layout_Profile"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:background="@color/colorMyBlack"
+        android:weightSum="100"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:id="@+id/menu_pos"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="8">
+
+            <include layout="@layout/menubar" />
+        </LinearLayout>
+
+        <android.support.v4.widget.DrawerLayout
+            android:id="@+id/layoutDrawer"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="92">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="92">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0sp"
+                    android:layout_weight="8"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btnRtn_Profile"
+                        style="@android:style/Widget.DeviceDefault.Button.Borderless"
+                        android:layout_width="50sp"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorMyMain"
+                        android:gravity="center"
+                        android:padding="0sp"
+                        android:text="@string/fa_caret_left"
+                        android:textColor="@color/colorMyBlack"
+                        android:textSize="48sp" />
+
+                    <TextView
+                        android:id="@+id/txtProfileImg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorMyMain"
+                        android:gravity="center"
+                        android:paddingRight="5sp"
+                        android:paddingLeft="5sp"
+                        android:text="@string/fa_user"
+                        android:textColor="@color/colorMyWhite"
+                        android:textSize="28sp" />
+
+                    <TextView
+                        android:id="@+id/txtProfileTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@color/colorMyMain"
+                        android:gravity="left|center_vertical"
+                        android:paddingLeft="12sp"
+                        android:text="PROFILE"
+                        android:textColor="@color/colorMyWhite"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:background="@color/colorMyWhite"
+                    android:layout_weight="76"
+                    android:paddingLeft="20sp"
+                    android:paddingRight="20sp"
+                    android:paddingTop="20sp"
+                    android:paddingBottom="10sp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_weight="1">
+
+                        <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="5sp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="10sp"
+                            android:layout_height="match_parent"
+                            android:background="@color/colorMyMain" />
+
+                        <EditText
+                            android:id="@+id/editFName_of_Profile"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@color/colorMySoftGray"
+                            android:gravity="left|center_vertical"
+                            android:singleLine="true"
+                            android:hint="First Name"
+                            android:inputType="textPersonName"
+                            android:textColor="@color/colorMyBlack"
+                            android:paddingLeft="20sp"
+                            android:enabled="false"
+                            android:textColorHint="@color/colorMyDarkGray" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="5sp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="10sp"
+                                android:layout_height="match_parent"
+                                android:background="@color/colorMyMain" />
+
+                            <EditText
+                                android:id="@+id/editLName_of_Profile"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@color/colorMySoftGray"
+                                android:gravity="left|center_vertical"
+                                android:singleLine="true"
+                                android:hint="Last Name"
+                                android:inputType="textPersonName"
+                                android:textColor="@color/colorMyBlack"
+                                android:paddingLeft="20sp"
+                                android:enabled="false"
+                                android:textColorHint="@color/colorMyDarkGray" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="5sp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="10sp"
+                                android:layout_height="match_parent"
+                                android:background="@color/colorMyMain" />
+
+                            <EditText
+                                android:id="@+id/editEmail_of_Profile"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@color/colorMySoftGray"
+                                android:gravity="left|center_vertical"
+                                android:singleLine="true"
+                                android:hint="Email Address"
+                                android:inputType="textPersonName"
+                                android:textColor="@color/colorMyBlack"
+                                android:paddingLeft="20sp"
+                                android:enabled="false"
+                                android:textColorHint="@color/colorMyDarkGray" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="5sp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/textView"
+                                android:layout_width="10sp"
+                                android:layout_height="match_parent"
+                                android:background="@color/colorMyMain" />
+
+                            <EditText
+                                android:id="@+id/editCompany_of_Profile"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@color/colorMySoftGray"
+                                android:gravity="left|center_vertical"
+                                android:singleLine="true"
+                                android:hint="Company name"
+                                android:inputType="textPersonName"
+                                android:textColor="@color/colorMyBlack"
+                                android:paddingLeft="20sp"
+                                android:textColorHint="@color/colorMyDarkGray" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="5sp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="10sp"
+                                android:layout_height="match_parent"
+                                android:background="@color/colorMyMain" />
+
+                            <EditText
+                                android:id="@+id/editAddress_of_Profile"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@color/colorMySoftGray"
+                                android:gravity="left|center_vertical"
+                                android:singleLine="true"
+                                android:hint="Address"
+                                android:inputType="textPersonName"
+                                android:textColor="@color/colorMyBlack"
+                                android:paddingLeft="20sp"
+                                android:textColorHint="@color/colorMyDarkGray" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="5sp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="10sp"
+                                android:layout_height="match_parent"
+                                android:background="@color/colorMyMain" />
+
+                            <EditText
+                                android:id="@+id/editSuburb_of_Profile"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@color/colorMySoftGray"
+                                android:gravity="left|center_vertical"
+                                android:singleLine="true"
+                                android:hint="Suburb"
+                                android:inputType="textPersonName"
+                                android:textColor="@color/colorMyBlack"
+                                android:paddingLeft="20sp"
+                                android:textColorHint="@color/colorMyDarkGray" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="5sp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            android:weightSum="100">
+
+                            <LinearLayout
+                                android:layout_width="0sp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="50">
+
+                                <TextView
+                                    android:layout_width="10sp"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/colorMyMain" />
+
+                                <EditText
+                                    android:id="@+id/editPostCode_of_Profile"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="@color/colorMySoftGray"
+                                    android:gravity="left|center_vertical"
+                                    android:singleLine="true"
+                                    android:hint="Post Code"
+                                    android:inputType="textPersonName"
+                                    android:textColor="@color/colorMyBlack"
+                                    android:paddingLeft="20sp"
+                                    android:textColorHint="@color/colorMyDarkGray" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0sp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="30sp"
+                                android:layout_weight="50">
+
+                                <TextView
+                                    android:layout_width="10sp"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/colorMyMain" />
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1">
+
+                                    <Spinner
+                                        android:id="@+id/spnState_of_Profile"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:paddingLeft="13sp"
+                                        android:gravity="left"
+                                        android:background="@color/colorMySoftGray"
+                                        android:textSize="16sp"
+                                        android:entries="@array/state_arrays"/>
+
+                                    <TextView
+                                        android:id="@+id/txtState_of_Profile"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:background="@color/colorMySoftGray"
+                                        android:gravity="left|center_vertical"
+                                        android:hint="State"
+                                        android:inputType="textPersonName"
+                                        android:textSize="18sp"
+                                        android:textColor="@color/colorMyBlack"
+                                        android:paddingLeft="20sp"
+                                        android:textColorHint="@color/colorMyDarkGray" />
+
+                                </RelativeLayout>
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="5sp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="10sp"
+                                android:layout_height="match_parent"
+                                android:background="@color/colorMyMain" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+
+                                <Spinner
+                                    android:id="@+id/spnFreight_of_Profile"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/colorMySoftGray"
+                                    android:paddingLeft="13sp"
+                                    android:textSize="16sp"
+                                    android:entries="@array/freight_arrays"
+                                    android:prompt="@string/freight_prompt"
+                                    android:visibility="visible"/>
+
+                                <TextView
+                                    android:id="@+id/txtFreight_of_Profile"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="@color/colorMySoftGray"
+                                    android:gravity="left|center_vertical"
+                                    android:hint="@string/freight_prompt"
+                                    android:inputType="textPersonName"
+                                    android:textSize="18sp"
+                                    android:textColor="@color/colorMyBlack"
+                                    android:paddingLeft="20sp"
+                                    android:textColorHint="@color/colorMyDarkGray" />
+                            </RelativeLayout>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorMyWhite"
+                        android:paddingTop="0sp"
+                        android:textSize="13sp"
+                        android:lineSpacingMultiplier="1.1"
+                        android:text="* Highgate Freight: freight charges will be added following your order being processed. \n* To edit any locked fields, please contact your Highgate Car Air representative."
+                        android:textColor="@color/colorMyBlack" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnSave"
+                    style="@android:style/Widget.DeviceDefault.Button.Borderless"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="8"
+                    android:background="@color/colorMyMain"
+                    android:text="SAVE"
+                    android:textColor="@color/colorMyWhite"
+                    android:textSize="24sp"
+                    tools:layout_editor_absoluteY="0dp"
+                    tools:layout_editor_absoluteX="8dp" />
+
+            </LinearLayout>
+
+            <include layout="@layout/menu_content" />
+
+        </android.support.v4.widget.DrawerLayout>
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

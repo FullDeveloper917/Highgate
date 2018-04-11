@@ -1,0 +1,127 @@
+<resources>
+    <string name="app_name">Highgate Air</string>
+    <string name="vehicle_introduction">Search our Vehicle Parts Guide for the exact parts for the vehicle you need, by selecting an option from each of the categories.\n\nWe are constantly adding new vehicles and parts to the list, but in case you cannot see the vehicle you need, feel free to call us by clicking on the Call button on the top right hand corner of this screen, and speak to one of our tech staff. P.:1800 15 15 15
+    </string>
+
+    <string name="hose_introduction">Search our Hose Fitting Guide for the exact parts for the vehicle you need, by selecting an option from each of the categories.\n\nWe are constantly adding new parts to the list, but in case you cannot see the part you need, feel free to call us by clicking on the Call button on the top right hand corner of this screen, and speak to one of our tech staff for more help. P.:1800 15 15 15
+    </string>
+
+    <string name="gas_introduction">PLEASE NOTE:\nThe refrigerant charge specifications quoted in the Highgate R134a Gas Charge Guide are a guide for OEM systems. All the normal procedure, care and criteria for charging a system MUST be observed.
+        Modifications and changes to components may alter the refrigerant charge requirements of the system. No responsibility will be accepted for system or component damage arising from, or as a result of, the use of the refrigerant charge information in this guide.
+        If you cannot find the information for the vehicle you require, please do not hesitate in call use on 1800 15 15 15, we are here to help!
+    </string>
+
+    <string name="end_string">
+        We will begin processing your order, and send you an e-mail order confirmation shortly.\n\n
+        Depending on your account type you may also receive a payment confirmation phone call from one of our friendly sales staff.
+    </string>
+
+    <string name="chart_activity_message">
+        Sorry, your cart is empty!\nPlease add some products to the cart.
+    </string>
+
+    <string name="first_pay_description">
+        By clicking on the green PAY NOW button,\nyou acknowledge and accept to make\nHighgate Car Air a payment of:
+    </string>
+
+    <string name="second_pay_description">
+        This transaction will be made securely using the\neWAY Payment Gateway.\nPlease visit www.highgateair.com.au/eway\nto view our eWAY Security Seal.
+    </string>
+
+    <string name="search_sku_hint">
+        Search by part n&#176;, oem n&#176;...
+    </string>
+
+    <string name="search_word_hint">
+        Search by make, model...
+    </string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="vehicle_menu_1">SELECT MAKE</string>
+    <string name="vehicle_menu_2">SELECT MODEL</string>
+    <string name="vehicle_menu_3">SELECT TYPE</string>
+    <string name="vehicle_menu_4">SELECT ENGINE</string>
+
+    <string name="hose_menu_1">SELECT FITTING TYPE</string>
+    <string name="hose_menu_2">SELECT HOSE TYPE</string>
+    <string name="hose_menu_3">SELECT ANGLE</string>
+    <string name="hose_menu_4">SELECT FITTING SIZE</string>
+    <string name="hose_menu_5">SELECT HOSE SIZE</string>
+    <string name="hose_menu_6">ADDITIONAL OPTIONS</string>
+    <string name="hose_menu_7">SELECT MATERIAL</string>
+    <string name="hose_menu_8">SELECT ACCESS</string>
+
+    <string name="gas_menu_1">1 - SELECT VEHICLE TYPE</string>
+    <string name="gas_menu_2">2 - SELECT MANUFACTURER</string>
+    <string name="gas_menu_3">3 - SELECT MODEL/YEAR</string>
+
+    <string name="order_n">Order N&#176;</string>
+    <string name="invoice_n">Invoice N&#176;</string>
+    <string name="con_note_n">Con Note N&#176;</string>
+
+
+    <string name="freight_prompt">
+        Preferred freight method*
+    </string>
+    <string-array name="freight_arrays">
+        <item>URGENT! Fastest delivery possible!</item>
+        <item>ADL Metro FAST RUN 7:30am 15min c/off</item>
+        <item>ADL Metro FAST RUN 10am 15min c/off</item>
+        <item>ADL Metro FAST RUN 12:30pm 15min c/off</item>
+        <item>ADL Metro FAST RUN 2pm 15min c/off</item>
+        <item>ADL Metro FAST RUN 3:30pm 15min c/off</item>
+        <item>Highgate Counter Pick-Up</item>
+        <item>Aladdin Transport</item>
+        <item>APD</item>
+        <item>Autosmart</item>
+        <item>Balaklava TSPT</item>
+        <item>Cochcranes (Kope)</item>
+        <item>Couriers Please</item>
+        <item>DHL</item>
+        <item>Fastway</item>
+        <item>Filmer Transport</item>
+        <item>Flatout Freight</item>
+        <item>Golden Riverland Express</item>
+        <item>Jet Couriers | Jet Direct (1hr Service) ADL Metro</item>
+        <item>Jet Couriers | Express (3hr Service) ADL Metro</item>
+        <item>Jet Couriers | General (4hr Service) ADL Metro</item>
+        <item>Johnno\'s Freight</item>
+        <item>JST Transport</item>
+        <item>K.I. Freight</item>
+        <item>KAOS Couriers</item>
+        <item>Kings | EC (2hr Service) ADL Metro</item>
+        <item>Kings | VIP (1hr Service) ADL Metro</item>
+        <item>KJM Contractors</item>
+        <item>Mannum Express</item>
+        <item>Megbuy</item>
+        <item>NQX</item>
+        <item>Post</item>
+        <item>RJB Transport</item>
+        <item>South East Express</item>
+        <item>Sprint Freight</item>
+        <item>Startrack Road</item>
+        <item>Startrack Overnight</item>
+        <item>Taxi (ADL Metro)</item>
+        <item>Town &amp; Country</item>
+        <item>TNT Overnight</item>
+        <item>TNT Road</item>
+        <item>Toll Priority Overnight</item>
+        <item>Toll Offpeak</item>
+        <item>Toll Express</item>
+        <item>Toll Ipec</item>
+        <item>Trenorden Transport</item>
+        <item>With Other Order</item>
+    </string-array>
+
+    <string-array name="state_arrays">
+        <item>NSW</item>
+        <item>VIC</item>
+        <item>TAS</item>
+        <item>WA</item>
+        <item>SA</item>
+        <item>QLD</item>
+    </string-array>
+
+</resources>

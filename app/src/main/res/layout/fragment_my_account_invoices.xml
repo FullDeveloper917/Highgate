@@ -1,0 +1,303 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorMyWhite"
+    tools:context="com.highgate.highgate.Fragments.MyAccountInvoicesFragment">
+
+    <LinearLayout
+        android:id="@+id/layout_MyAccountInvoice"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="84">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0sp"
+            android:background="@color/colorMyGray"
+            android:layout_weight="8">
+
+            <TextView
+                android:id="@+id/txtInvoiceN_MyAccountInvoice"
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.2"
+                android:textColor="@color/colorMyBlack"
+                android:textSize="24sp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:text="Invoice N&#176; "/>
+
+            <TextView
+                android:id="@+id/txtDate_MyAccountInvoice"
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.8"
+                android:textColor="@color/colorMyBlack"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:text="Date: 00-00-0000"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0sp"
+            android:background="@color/colorMySoftGray"
+            android:orientation="vertical"
+            android:padding="10sp"
+            android:layout_marginBottom="5sp"
+            android:layout_weight="18">
+
+            <TextView
+                android:id="@+id/txtOrderN_MyAccountInvoice"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Order N&#176;: "
+                android:textColor="@color/colorMyBlack"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/txtOrderReference_MyAccountInvoice"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Order Reference: "
+                android:textColor="@color/colorMyBlack"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/txtDispatchMethod_MyAccountInvoice"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Dispatch Method: "
+                android:textColor="@color/colorMyBlack"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/txtConNoteN_MyAccountInvoice"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Con Note N&#176;: "
+                android:textColor="@color/colorMyBlack"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:layout_weight="1"/>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0sp"
+            android:layout_weight="6"
+            android:paddingLeft="10sp"
+            android:paddingRight="10sp"
+            android:background="@color/colorMyGray"
+            android:layout_marginBottom="5sp"
+            android:weightSum="100">
+
+            <TextView
+                android:id="@+id/txtTableLabelPartN_MyAccountInvoice"
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:text="Part N&#176;"
+                android:textColor="@color/colorMyBlack"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:paddingLeft="5sp"
+                android:gravity="left|center"
+                android:layout_weight="20"/>
+
+            <TextView
+                android:id="@+id/txtTableLabelDescription_MyAccountInvoice"
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:text="Description"
+                android:textColor="@color/colorMyBlack"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:paddingLeft="5sp"
+                android:gravity="left|center"
+                android:layout_weight="35"/>
+
+            <TextView
+                android:id="@+id/txtTableLabelQty_MyAccountInvoice"
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:layout_weight="8"
+                android:gravity="left|center"
+                android:paddingLeft="5sp"
+                android:text="Qty"
+                android:textColor="@color/colorMyBlack"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtTableLabelPrice_MyAccountInvoice"
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:text="Price"
+                android:textColor="@color/colorMyBlack"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:paddingLeft="5sp"
+                android:gravity="left|center"
+                android:layout_weight="17"/>
+
+            <TextView
+                android:id="@+id/txtTableLabelSubtotal_MyAccountInvoice"
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:text="Subtotal"
+                android:textColor="@color/colorMyBlack"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:paddingLeft="5sp"
+                android:gravity="left|center"
+                android:layout_weight="20"/>
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/listInvoices_MyAccountInvoice"
+            android:layout_width="match_parent"
+            android:layout_height="0sp"
+            android:background="@color/colorMySoftGray"
+            android:layout_weight="38"
+            android:fadeScrollbars="false"
+            android:fastScrollStyle="@drawable/scrollbar_vertical_thum"
+            android:scrollbarThumbVertical="@drawable/scrollbar_vertical_thum"
+            android:scrollbarTrackVertical="@drawable/scrollbar_vertical_track"
+            android:verticalScrollbarPosition="right" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0sp"
+            android:layout_weight="14"
+            android:background="@color/colorMyGray"
+            android:padding="10sp"
+            android:weightSum="100">
+
+            <LinearLayout
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:layout_weight="36"
+                android:orientation="vertical"
+                android:paddingRight="10sp">
+
+                <TextView
+                    android:id="@+id/txtLabelSubTotal_MyAccountInvoice"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="right|center"
+                    android:text="subtotal"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorMyBlack"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtLabelGst_MyAccountInvoice"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="right|center"
+                    android:text="gst"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorMyBlack"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtLabelGrandTotal_MyAccountInvoice"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="right|center"
+                    android:text="grand total"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorMyBlack"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:layout_weight="24"
+                android:orientation="vertical"
+                android:paddingRight="10sp">
+
+                <TextView
+                    android:id="@+id/txtSubTotal_MyAccountInvoice"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="right|center"
+                    android:text="$"
+                    android:textColor="@color/colorMyBlack"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/txtGst_MyAccountInvoice"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="right|center"
+                    android:text="$"
+                    android:textColor="@color/colorMyBlack"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/txtGrandTotal_MyAccountInvoice"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="right|center"
+                    android:text="$"
+                    android:textColor="@color/colorMyBlack"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:layout_weight="40"
+
+                android:orientation="vertical"
+                android:paddingBottom="5sp"
+                android:paddingLeft="10sp"
+                android:paddingRight="20sp"
+                android:paddingTop="5sp">
+
+                <Button
+                    android:id="@+id/btnStatus_MyAccountInvoice"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/colorMyGreen"
+                    android:gravity="center"
+                    android:text="pay now"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorMyWhite"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</FrameLayout>

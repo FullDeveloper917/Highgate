@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" value="integer" name="position_id"/>
+    <item type="id" value="integer" name="image_product_id"/>
+    <item type="id" value="integer" name="text_image_number_id"/>
+    <item type="id" value="integer" name="btn_left_id"/>
+    <item type="id" value="integer" name="btn_right_id"/>
+</resources>

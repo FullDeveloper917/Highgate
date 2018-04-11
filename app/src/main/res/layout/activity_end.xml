@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.highgate.highgate.EndActivity">
+
+    <LinearLayout
+        android:id="@+id/layout_End"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:background="@color/colorMyBlack"
+        android:weightSum="100"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:id="@+id/menu_pos"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="8">
+
+            <include layout="@layout/menubar" />
+        </LinearLayout>
+
+        <android.support.v4.widget.DrawerLayout
+            android:id="@+id/layoutDrawer"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="92">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="92">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0sp"
+                    android:layout_weight="8"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btnRtn_End"
+                        style="@android:style/Widget.DeviceDefault.Button.Borderless"
+                        android:layout_width="50sp"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorMyMain"
+                        android:gravity="center"
+                        android:padding="0sp"
+                        android:text="@string/fa_caret_left"
+                        android:textColor="@color/colorMyBlack"
+                        android:textSize="48sp" />
+
+                    <TextView
+                        android:id="@+id/txtRtn_End"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorMyMain"
+                        android:gravity="center"
+                        android:paddingLeft="5sp"
+                        android:paddingRight="5sp"
+                        android:text="@string/fa_check"
+                        android:textColor="@color/colorMyWhite"
+                        android:textSize="28sp" />
+
+                    <TextView
+                        android:id="@+id/txtEndTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@color/colorMyMain"
+                        android:gravity="left|center_vertical"
+                        android:paddingLeft="12sp"
+                        android:text="ORDER COMPLETE"
+                        android:textColor="@color/colorMyWhite"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="76"
+                    android:background="@color/colorMyWhite"
+                    android:orientation="vertical"
+                    android:weightSum="100">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="75"
+                        android:orientation="vertical"
+                        android:paddingLeft="20sp"
+                        android:paddingRight="20sp">
+
+                        <TextView
+                            android:id="@+id/txtMark_End"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="bottom|center_horizontal"
+                            android:text="@string/fa_check"
+                            android:textColor="@color/colorMyMain"
+                            android:textSize="56sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Thank you"
+                            android:textColor="@color/colorMyBlack"
+                            android:textSize="32sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="30sp"
+                            android:gravity="center"
+                            android:text="for ordering with the Highgate Car Air App"
+                            android:textColor="@color/colorMyBlack"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:paddingBottom="30sp"
+                            android:paddingLeft="20sp"
+                            android:paddingRight="20sp"
+                            android:paddingTop="30sp"
+                            android:lineSpacingMultiplier="1.2"
+                            android:text="@string/end_string"
+                            android:textColor="@color/colorMyBlack"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="25"
+                        android:orientation="vertical"
+                        android:weightSum="100"
+                        android:background="@color/colorMyGray">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="50"
+                            android:text="Highgate Order Reference"
+                            android:textColor="@color/colorMyBlack"
+                            android:textSize="16sp"
+                            android:gravity="bottom|center_horizontal"
+                            android:paddingBottom="5sp"/>
+
+                        <TextView
+                            android:id="@+id/txtOrderReference_End"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="50"
+                            android:gravity="top|center_horizontal"
+                            android:paddingTop="5sp"
+                            android:text="211442"
+                            android:textColor="@color/colorMyBlack"
+                            android:textSize="24sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnGoDash_End"
+                    style="@android:style/Widget.DeviceDefault.Button.Borderless"
+                    android:layout_width="match_parent"
+                    android:layout_height="0sp"
+                    android:layout_weight="8"
+                    android:background="@color/colorMyMain"
+                    android:text="Go to Dashboard"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorMyWhite"
+                    android:textSize="24sp"/>
+            </LinearLayout>
+
+            <include layout="@layout/menu_content"/>
+
+        </android.support.v4.widget.DrawerLayout>
+
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

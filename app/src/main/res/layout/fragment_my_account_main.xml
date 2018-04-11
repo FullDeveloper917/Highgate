@@ -1,0 +1,285 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.highgate.highgate.Fragments.MyAccountMainFragment">
+
+    <LinearLayout
+        android:id="@+id/layout_MyAccountMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="84">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0sp"
+            android:layout_weight="8"
+            android:background="@color/colorMyGray">
+
+            <TextView
+                android:id="@+id/txtLabelOfBalance_MyAccountMain"
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.1"
+                android:gravity="right|center"
+                android:text="BALANCE:"
+                android:textColor="@color/colorMyBlack"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtBalance_MyAccountMain"
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.9"
+                android:gravity="left|center"
+                android:paddingLeft="5sp"
+                android:text="$0.00"
+                android:textColor="@color/colorMyBlack"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:layout_weight="2">
+
+                <Button
+                    android:id="@+id/btnMakePayment_MyAccountMain"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10sp"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginRight="20sp"
+                    android:layout_marginTop="10sp"
+                    android:layout_weight="2"
+                    android:background="@color/colorMyGreen"
+                    android:text="make a payment"
+                    android:textAllCaps="true"
+                    android:textSize="12sp"
+                    android:textColor="@color/colorMyWhite" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0sp"
+            android:layout_weight="8">
+
+            <LinearLayout
+                android:id="@+id/layoutAgedBalances_MyAccountMain"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorMySoftGray"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingBottom="3sp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/txtCurrentBalance_MyAccountMain"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Current: $0.00"
+                        android:textColor="@color/colorMyBlack"
+                        android:gravity="left|bottom"
+                        android:paddingLeft="20sp"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:id="@+id/txtOneMonthBalance_MyAccountMain"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="left|bottom"
+                        android:paddingLeft="20sp"
+                        android:text="1 Month: $0.00"
+                        android:textColor="@color/colorMyBlack" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingTop="3sp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/txtTwoMonthsBalance_MyAccountMain"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="2 Months: $0.00"
+                        android:textColor="@color/colorMyBlack"
+                        android:gravity="left|top"
+                        android:paddingLeft="20sp"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:id="@+id/txtThreeMonthsBalance_MyAccountMain"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="3+ Months: $0.00"
+                        android:textColor="@color/colorMyBlack"
+                        android:gravity="left|top"
+                        android:paddingLeft="20sp"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutPayments_MyAccountMain"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorMyGray"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="20sp"
+                    android:paddingTop="5sp"
+                    android:paddingBottom="10sp"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Touch below to edit amount."
+                        android:textColor="@color/colorMyBlack"
+                        android:textSize="11sp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="$"
+                            android:textColor="@color/colorMyBlack"
+                            android:textSize="16sp"
+                            android:paddingLeft="10sp"
+                            android:background="@color/colorMyWhite"
+                            android:gravity="right|center"
+                            />
+
+                        <EditText
+                            android:id="@+id/edtPayAmount_MyAccountMain"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:inputType="numberDecimal"
+                            android:layout_gravity="left|center"
+                            android:singleLine="true"
+                            android:text="0.00"
+                            android:textColor="@color/colorMyBlack"
+                            android:textSize="16sp"
+                            android:background="@color/colorMyWhite"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:id="@+id/btnPayNow_MyAccountMain"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="pay now"
+                        android:textSize="12sp"
+                        android:textColor="@color/colorMyWhite"
+                        android:layout_marginTop="10sp"
+                        android:layout_marginBottom="10sp"
+                        android:layout_marginLeft="20sp"
+                        android:layout_marginRight="20sp"
+                        android:background="@color/colorMyGreen"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0sp"
+            android:background="@color/colorMyWhite"
+            android:paddingTop="5sp"
+            android:paddingBottom="5sp"
+            android:layout_weight="8">
+
+            <TextView
+                android:id="@+id/txtLabelOrderTable_MyAccountMain"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorMyGray"
+                android:layout_marginRight="3sp"
+                android:text="orders"
+                android:textColor="@color/colorMyBlack"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:gravity="center"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/txtLabelInvoiceTable_MyAccountMain"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorMyGray"
+                android:layout_marginLeft="3sp"
+                android:text="invoices"
+                android:textColor="@color/colorMyBlack"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:gravity="center"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0sp"
+            android:background="@color/colorMyWhite"
+            android:layout_weight="60">
+
+            <ListView
+                android:id="@+id/listOrders_MyAccountMain"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="3sp"
+                android:layout_weight="1"
+                android:background="@color/colorMySoftGray"
+                android:fadeScrollbars="false"
+                android:fastScrollStyle="@drawable/scrollbar_vertical_thum"
+                android:scrollbarThumbVertical="@drawable/scrollbar_vertical_thum"
+                android:scrollbarTrackVertical="@drawable/scrollbar_vertical_track"
+                android:verticalScrollbarPosition="left" />
+
+            <ListView
+                android:id="@+id/listInvoices_MyAccountMain"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorMySoftGray"
+                android:layout_marginLeft="3sp"
+                android:layout_weight="1"
+                android:fadeScrollbars="false"
+                android:fastScrollStyle="@drawable/scrollbar_vertical_thum"
+                android:scrollbarThumbVertical="@drawable/scrollbar_vertical_thum"
+                android:scrollbarTrackVertical="@drawable/scrollbar_vertical_track" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</FrameLayout>

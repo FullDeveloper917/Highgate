@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.highgate.highgate.SearchActivity">
+
+    <LinearLayout
+        android:id="@+id/layout_Search"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:background="@color/colorMyBlack"
+        android:weightSum="100"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <LinearLayout
+            android:id="@+id/menu_pos"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="8">
+
+            <include layout="@layout/menubar" />
+        </LinearLayout>
+
+        <android.support.v4.widget.DrawerLayout
+            android:id="@+id/layoutDrawer"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="92">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="92">
+
+                <LinearLayout
+                    android:id="@+id/layoutRtn_Search"
+                    android:layout_width="match_parent"
+                    android:layout_height="0sp"
+                    android:layout_weight="8"
+                    android:background="@color/colorMyMain"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/btnRtn_Search"
+                        android:layout_width="50sp"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorMyMain"
+                        android:padding="0sp"
+                        android:gravity="center"
+                        android:text="@string/fa_caret_left"
+                        android:textColor="@color/colorMyBlack"
+                        android:textSize="48sp" />
+
+                    <TextView
+                        android:id="@+id/txtRtn_Search"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorMyMain"
+                        android:gravity="center"
+                        android:paddingRight="10sp"
+                        android:text="@string/fa_search"
+                        android:textColor="@color/colorMyWhite"
+                        android:textSize="28sp" />
+
+                    <TextView
+                        android:id="@+id/txtTitle_Search"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="left|center_vertical"
+                        android:background="@color/colorMyMain"
+                        android:text="SEARCH"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorMyWhite"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <android.support.v4.widget.DrawerLayout
+                    android:id="@+id/layoutMain_Search"
+                    android:layout_width="match_parent"
+                    android:layout_height="0sp"
+                    android:layout_weight="84">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:weightSum="84"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/linearLayout2"
+                            android:layout_width="match_parent"
+                            android:layout_height="0sp"
+                            android:layout_weight="15"
+                            android:background="@color/colorMyBlack"
+                            android:paddingTop="12sp"
+                            android:paddingBottom="12sp"
+                            android:paddingLeft="30sp"
+                            android:paddingRight="30sp"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0sp"
+                                android:background="@color/colorMyMain"
+                                android:padding="2sp"
+                                android:layout_weight="1">
+
+                                <Button
+                                    android:id="@+id/btnSearchSku_Search"
+                                    style="@style/Base.Widget.AppCompat.Button.Borderless"
+                                    android:layout_width="0sp"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/colorMyMain"
+                                    android:padding="0sp"
+                                    android:layout_weight="1"
+                                    android:text="search number"
+                                    android:textColor="@color/colorMyWhite"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+
+                                <Button
+                                    android:id="@+id/btnSearchWord_Search"
+                                    style="@style/Base.Widget.AppCompat.Button.Borderless"
+                                    android:layout_width="0sp"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/colorMyBlack"
+                                    android:padding="0sp"
+                                    android:layout_weight="1"
+                                    android:text="search Word"
+                                    android:textColor="@color/colorMyDarkGray"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0sp"
+                                android:layout_weight="1"
+                                android:layout_marginTop="4sp">
+
+                                <TextView
+                                    android:id="@+id/txtSearchImg_Search"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/colorMyMain"
+                                    android:gravity="center"
+                                    android:padding="5sp"
+                                    android:text="@string/fa_search"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/colorMyWhite"
+                                    android:textSize="22sp" />
+
+                                <EditText
+                                    android:id="@+id/editSearch_Search"
+                                    android:layout_width="0sp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="@color/colorMyWhite"
+                                    android:hint="@string/search_sku_hint"
+                                    android:singleLine="true"
+                                    android:inputType="text"
+                                    android:imeOptions="actionGo"
+                                    android:paddingLeft="10sp"
+                                    android:textColor="@color/colorMyBlack"
+                                    android:textColorHint="@color/colorMyDarkGray"
+                                    android:textSize="14sp"/>
+
+                                <Button
+                                    android:id="@+id/btnGo_Search"
+                                    style="@android:style/Widget.DeviceDefault.Button.Borderless"
+                                    android:layout_width="50sp"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/colorMyMain"
+                                    android:text="Go"
+                                    android:textColor="@color/colorMyWhite"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold"/>
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0sp"
+                            android:layout_weight="12"
+                            android:background="@color/colorMyGray"
+                            android:weightSum="100">
+
+                            <LinearLayout
+                                android:layout_width="0sp"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="15sp"
+                                android:layout_marginLeft="10sp"
+                                android:layout_marginRight="10sp"
+                                android:layout_marginTop="15sp"
+                                android:layout_weight="75"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/txtLabelFoundResult_Search"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0sp"
+                                    android:layout_weight="1"
+                                    android:text="We have found 0 results for:"
+                                    android:gravity="left|center_vertical"
+                                    android:textAllCaps="true"
+                                    android:textColor="@color/colorMyBlack"
+                                    android:textSize="12sp" />
+
+                                <TextView
+                                    android:id="@+id/txtFoundResult_Search"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0sp"
+                                    android:gravity="left|center_vertical"
+                                    android:layout_weight="1"
+                                    android:text=""
+                                    android:textColor="@color/colorMyBlack"
+                                    android:textSize="13sp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="25"
+                                android:orientation="vertical"
+                                android:weightSum="100">
+
+                                <TextView
+                                    android:id="@+id/txtFilterUp_Search"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:gravity="bottom|center_horizontal"
+                                    android:text="@string/fa_filter"
+                                    android:textColor="@color/colorMyBlack"
+                                    android:textSize="24sp"
+                                    android:layout_weight="50"/>
+
+                                <TextView
+                                    android:id="@+id/txtFilterDown_Search"
+                                    style="@android:style/Widget.DeviceDefault.Button.Borderless"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="50"
+                                    android:text="filter"
+                                    android:textColor="@color/colorMyBlack"
+                                    android:textSize="16sp"
+                                    android:gravity="top|center_horizontal"
+                                    android:padding="0sp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0sp"
+                            android:layout_weight="57">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <ListView
+                                    android:id="@+id/listProduct_Search"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0sp"
+                                    android:layout_weight="1"
+                                    android:fadeScrollbars="false"
+                                    android:background="@color/colorMyWhite"
+                                    android:fastScrollStyle="@drawable/scrollbar_vertical_thum"
+                                    android:scrollbarTrackVertical="@drawable/scrollbar_vertical_track"
+                                    android:scrollbarThumbVertical="@drawable/scrollbar_vertical_thum"/>
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:id="@+id/layoutFilterCategory"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:visibility="gone">
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="10sp"
+                                    android:background="@color/colorMyWhite"/>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="25sp"
+                                    android:paddingTop="10sp"
+                                    android:paddingBottom="10sp"
+                                    android:background="@color/colorMySoftGray"
+                                    android:weightSum="100">
+
+                                    <TextView
+                                        android:id="@+id/txtSelectFilterbyCategory"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="75"
+                                        android:background="@color/colorMySoftGray"
+                                        android:text="select filters by category"
+                                        android:textAllCaps="true"
+                                        android:textStyle="bold"
+                                        android:textColor="@color/colorMyBlack"/>
+
+                                    <TextView
+                                        android:id="@+id/txtFilterCategoryResults"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="25"
+                                        android:background="@color/colorMySoftGray"
+                                        android:text="results"
+                                        android:textAllCaps="true"
+                                        android:textStyle="bold"
+                                        android:textColor="@color/colorMyBlack"/>
+
+                                </LinearLayout>
+
+                                <ListView
+                                    android:id="@+id/listFilterCategory"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="@color/colorMySoftGray"
+                                    android:fadeScrollbars="false"
+                                    android:fastScrollStyle="@drawable/scrollbar_vertical_thum"
+                                    android:scrollbarTrackVertical="@drawable/scrollbar_vertical_track"
+                                    android:scrollbarThumbVertical="@drawable/scrollbar_vertical_thum"/>
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layoutOrderReport_Search"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+                        <include
+                            layout="@layout/order_report"/>
+                    </LinearLayout>
+
+                    <android.support.constraint.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ProgressBar
+                            android:id="@+id/progressBar_Search"
+                            style="?android:attr/progressBarStyle"
+                            android:layout_width="70sp"
+                            android:layout_height="70sp"
+                            android:background="@xml/progress_color"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            android:visibility="gone"/>
+
+                    </android.support.constraint.ConstraintLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/layoutZoomImage_Search"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="start"
+                        android:background="@color/colorMyWhite">
+
+                        <ImageView
+                            android:id="@+id/imgZoomImage_Search"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="0sp"
+                            android:scaleType="matrix" />
+
+                        <Button
+                            android:id="@+id/btnZoomImageClose_Search"
+                            android:layout_width="30sp"
+                            android:layout_height="30sp"
+                            android:text="@string/fa_times"
+                            android:textColor="@color/colorMyMain"
+                            android:padding="0sp"
+                            android:textSize="20sp"
+                            android:background="@color/colorMyTransparent"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true" />
+                    </RelativeLayout>
+                </android.support.v4.widget.DrawerLayout>
+
+
+            </LinearLayout>
+
+            <include layout="@layout/menu_content"/>
+        </android.support.v4.widget.DrawerLayout>
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/order_report"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/colorMySoftGray"
+    android:layout_height="match_parent"
+    android:weightSum="84">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:orientation="vertical"
+        android:layout_weight="76"
+        android:weightSum="100">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="75"
+            android:orientation="vertical"
+            android:paddingLeft="20sp"
+            android:paddingRight="20sp">
+
+            <TextView
+                android:id="@+id/txtMark_OrderReport"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="bottom|center_horizontal"
+                android:text="@string/fa_check"
+                android:textColor="@color/colorMyMain"
+                android:textSize="56sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Thank you"
+                android:textColor="@color/colorMyBlack"
+                android:textSize="32sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30sp"
+                android:gravity="center"
+                android:text="for ordering with the Highgate Car Air App"
+                android:textColor="@color/colorMyBlack"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="30sp"
+                android:paddingLeft="20sp"
+                android:paddingRight="20sp"
+                android:paddingTop="30sp"
+                android:lineSpacingMultiplier="1.2"
+                android:text="@string/end_string"
+                android:textColor="@color/colorMyBlack"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="25"
+            android:orientation="vertical"
+            android:weightSum="100"
+            android:background="@color/colorMyGray">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="50"
+                android:text="Highgate Order Reference"
+                android:textColor="@color/colorMyBlack"
+                android:textSize="16sp"
+                android:gravity="bottom|center_horizontal"
+                android:paddingBottom="5sp"/>
+
+            <TextView
+                android:id="@+id/txtOrderReference_OrderReport"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="50"
+                android:gravity="top|center_horizontal"
+                android:paddingTop="5sp"
+                android:text="211442"
+                android:textColor="@color/colorMyBlack"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnClose_OrderReport"
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="8"
+        android:text="@string/fa_times_circle"
+        android:textColor="@color/colorMyWhite"
+        android:textSize="24sp"
+        android:background="@color/colorMyMain"/>
+
+</LinearLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_one_filter_category"
+    android:layout_width="match_parent"
+    android:background="@color/colorMySoftGray"
+    android:layout_height="35dp"
+    android:paddingLeft="25sp"
+    android:paddingTop="5sp"
+    android:paddingBottom="5sp"
+    android:weightSum="100">
+
+    <LinearLayout
+        android:id="@+id/layout_one_filter_category1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="75">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:scaleType="fitCenter"
+            android:src="@drawable/bullet"/>
+
+        <Button
+            android:id="@+id/btnFilterCategory"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorMySoftGray"
+            android:textColor="@color/colorMyBlack"
+            android:textAllCaps="true"
+            android:paddingLeft="15dp"
+            android:gravity="left|center_vertical"
+            android:text="one category"/>
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/txtProductNumCategory"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="25"
+        android:background="@color/colorMySoftGray"
+        android:text="0"
+        android:textColor="@color/colorMyBlack"
+        android:gravity="left|center_vertical"/>
+
+</LinearLayout>

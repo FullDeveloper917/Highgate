@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/menu_content"
+    android:layout_width="280dp"
+    android:layout_height="match_parent"
+    android:background="@color/colorMyWhite"
+    android:layout_gravity="start">
+
+        <!-- Profile Box -->
+
+        <LinearLayout
+            android:id="@+id/layoutMenu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="20dp"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:paddingBottom="30dp"
+            android:orientation="vertical"
+            android:weightSum="100"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="12">
+
+                <TextView
+                    android:id="@+id/txtGoDash_Menu"
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorMyMain"
+                    android:text="@string/fa_th_large"
+                    android:gravity="center"
+                    android:textColor="@color/colorMyWhite"
+                    android:textSize="18dp"/>
+
+                <Button
+                    android:id="@+id/btnGoDash_Menu"
+                    style="@android:style/Widget.DeviceDefault.Button.Borderless"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/colorMyMain"
+                    android:gravity="left|center_vertical"
+                    android:textColor="@color/colorMyWhite"
+                    android:textSize="16sp"
+                    android:text="Home" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="6"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="12">
+
+                <TextView
+                    android:id="@+id/txtEditProfile_Menu"
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorMyMain"
+                    android:text="@string/fa_user"
+                    android:gravity="center"
+                    android:textColor="@color/colorMyWhite"
+                    android:textSize="18dp"/>
+
+                <Button
+                    android:id="@+id/btnEditProFile_Menu"
+                    style="@android:style/Widget.DeviceDefault.Button.Borderless"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/colorMyMain"
+                    android:gravity="left|center_vertical"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorMyWhite"
+                    android:text="edit profile" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="6"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="12">
+
+                <TextView
+                    android:id="@+id/txtOneClick_Menu"
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorMyMain"
+                    android:text="@string/fa_mouse_pointer"
+                    android:gravity="center"
+                    android:textColor="@color/colorMyWhite"
+                    android:textSize="18dp"/>
+
+                <Button
+                    android:id="@+id/btnOneClick_Menu"
+                    style="@android:style/Widget.DeviceDefault.Button.Borderless"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/colorMyMain"
+                    android:gravity="left|center_vertical"
+                    android:textColor="@color/colorMyWhite"
+                    android:textSize="16sp"
+                    android:text="1 click order" />
+
+                <LinearLayout
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:weightSum="100">
+
+                    <Button
+                        android:id="@+id/btnOneClick1_Menu"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="50"
+                        android:background="@color/colorMyBlack"
+                        android:textColor="@color/colorMyGreen"
+                        android:text="@string/fa_check"
+                        android:gravity="center|bottom"
+                        android:textSize="16sp"/>
+
+                    <Button
+                        android:id="@+id/btnOneClick2_Menu"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="50"
+                        android:background="@color/colorMyBlack"
+                        android:textColor="@color/colorMyGreen"
+                        android:text="ON"
+                        android:textStyle="bold"
+                        android:gravity="center|top"
+                        android:textSize="14sp"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="40"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="12">
+
+                <TextView
+                    android:id="@+id/txtLogout_Menu"
+                    android:layout_width="90dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorMyMain"
+                    android:gravity="right|center_vertical"
+                    android:paddingRight="10dp"
+                    android:text="@string/fa_sign_out"
+                    android:textColor="@color/colorMyWhite"
+                    android:textSize="18dp"/>
+
+                <Button
+                    android:id="@+id/btnLogout_Menu"
+                    style="@android:style/Widget.DeviceDefault.Button.Borderless"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/colorMyMain"
+                    android:gravity="left|center_vertical"
+                    android:textColor="@color/colorMyWhite"
+                    android:textSize="16sp"
+                    android:text="logout" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+</RelativeLayout>

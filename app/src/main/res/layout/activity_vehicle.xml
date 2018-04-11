@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.highgate.highgate.VehicleActivity">
+
+    <LinearLayout
+        android:id="@+id/layout_Vehicle"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:background="@color/colorMyBlack"
+        android:weightSum="100"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:id="@+id/menu_pos"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="8">
+
+            <include layout="@layout/menubar" />
+        </LinearLayout>
+
+        <android.support.v4.widget.DrawerLayout
+            android:id="@+id/layoutDrawer"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="92">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="92">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0sp"
+                    android:layout_weight="8"
+                    android:background="@color/colorMyMain"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btnRtn_Vehicle"
+                        style="@android:style/Widget.DeviceDefault.Button.Borderless"
+                        android:layout_width="50sp"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorMyMain"
+                        android:padding="0sp"
+                        android:text="@string/fa_caret_left"
+                        android:textColor="@color/colorMyBlack"
+                        android:textSize="48sp" />
+
+                    <TextView
+                        android:id="@+id/txtRtn_Vehicle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorMyMain"
+                        android:gravity="center"
+                        android:paddingRight="10sp"
+                        android:text="@string/fa_cogs"
+                        android:textColor="@color/colorMyWhite"
+                        android:textSize="28sp" />
+
+                    <TextView
+                        android:id="@+id/txtVehicleTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.08"
+                        android:background="@color/colorMyMain"
+                        android:gravity="left|center_vertical"
+                        android:text="VEHICLE PARTS GUIDE"
+                        android:textColor="@color/colorMyWhite"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <android.support.v4.widget.DrawerLayout
+                    android:id="@+id/layoutMain_Vehicle"
+                    android:layout_width="match_parent"
+                    android:layout_height="0sp"
+                    android:layout_weight="84">
+
+                    <LinearLayout
+                        android:id="@+id/layoutContent_Vehicle"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:weightSum="84">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0sp"
+                            android:layout_weight="6"
+                            android:weightSum="100">
+
+                            <Button
+                                android:id="@+id/btnSelectMake"
+                                style="@android:style/Widget.DeviceDefault.Button.Borderless"
+                                android:layout_width="0sp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="50"
+                                android:background="@color/colorMyGray"
+                                android:text="@string/vehicle_menu_1"
+                                android:textAllCaps="false"
+                                android:textColor="@color/colorMyBlack" />
+
+                            <Button
+                                style="@android:style/Widget.DeviceDefault.Button.Borderless"
+                                android:id="@+id/btnSelectModel"
+                                android:layout_width="0sp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="50"
+                                android:background="@color/colorMySoftGray"
+                                android:textAllCaps="false"
+                                android:text="@string/vehicle_menu_2"
+                                android:textColor="@color/colorMyDarkGray" />
+                        </LinearLayout>
+
+                        <android.support.v4.widget.DrawerLayout
+                            android:id="@+id/layoutDrawer_Vehicle1"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="78">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:weightSum="78">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0sp"
+                                    android:layout_weight="6">
+
+                                    <Button
+                                        android:id="@+id/btnSelectType"
+                                        style="@android:style/Widget.DeviceDefault.Button.Borderless"
+                                        android:layout_width="0sp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="50"
+                                        android:background="@color/colorMySoftGray"
+                                        android:text="@string/vehicle_menu_3"
+                                        android:textAllCaps="false"
+                                        android:textColor="@color/colorMyDarkGray" />
+
+                                    <Button
+                                        android:id="@+id/btnSelectEngine"
+                                        style="@android:style/Widget.DeviceDefault.Button.Borderless"
+                                        android:layout_width="0sp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="50"
+                                        android:background="@color/colorMySoftGray"
+                                        android:text="@string/vehicle_menu_4"
+                                        android:textAllCaps="false"
+                                        android:textColor="@color/colorMyDarkGray" />
+                                </LinearLayout>
+
+                                <android.support.v4.widget.DrawerLayout
+                                    android:id="@+id/layoutDrawer_Vehicle2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="72">
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+
+                                        <TextView
+                                            android:id="@+id/txtIntroduct_Vehicle"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:background="@color/colorMyWhite"
+                                            android:lineSpacingMultiplier="1.2"
+                                            android:paddingBottom="0sp"
+                                            android:paddingLeft="30sp"
+                                            android:paddingRight="30sp"
+                                            android:paddingTop="50sp"
+                                            android:text="@string/vehicle_introduction"
+                                            android:textColor="@color/colorMyBlack"
+                                            android:textSize="16sp"/>
+
+                                        <LinearLayout
+                                            android:id="@+id/layoutVehicleContent"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:orientation="vertical"
+                                            android:visibility="gone">
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="32sp">
+
+                                                <TextView
+                                                    android:id="@+id/txtClearVehicle"
+                                                    android:layout_width="50dp"
+                                                    android:layout_height="match_parent"
+                                                    android:text="@string/fa_times_circle"
+                                                    android:textColor="@color/colorMyWhite"
+                                                    android:background="@color/colorMyMain"
+                                                    android:gravity="right|center_vertical"
+                                                    android:paddingRight="5sp"
+                                                    android:textSize="24sp"/>
+
+                                                <Button
+                                                    android:id="@+id/btnClearVehicle"
+                                                    style="@android:style/Widget.DeviceDefault.Button.Borderless"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:background="@color/colorMyMain"
+                                                    android:layout_weight="6"
+                                                    android:text="Clear selection and make a new search"
+                                                    android:textAllCaps="false"
+                                                    android:textSize="14sp"
+                                                    android:gravity="left|center_vertical"
+                                                    android:paddingLeft="5dp"
+                                                    android:textColor="@color/colorMyWhite" />
+
+                                            </LinearLayout>
+
+                                            <RelativeLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="0dp"
+                                                android:layout_weight="1">
+
+                                                <ListView
+                                                    android:id="@+id/listViewSelectedVehicle"
+                                                    android:layout_width="match_parent"
+                                                    android:background="@color/colorMyWhite"
+                                                    android:fadeScrollbars="false"
+                                                    android:fastScrollStyle="@drawable/scrollbar_vertical_thum"
+                                                    android:scrollbarTrackVertical="@drawable/scrollbar_vertical_track"
+                                                    android:scrollbarThumbVertical="@drawable/scrollbar_vertical_thum"
+                                                    android:layout_height="match_parent"/>
+
+                                                <android.support.constraint.ConstraintLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent">
+
+                                                    <ProgressBar
+                                                        android:id="@+id/progressBar_Vehicle"
+                                                        style="?android:attr/progressBarStyle"
+                                                        android:layout_width="70sp"
+                                                        android:layout_height="70sp"
+                                                        android:background="@xml/progress_color"
+                                                        app:layout_constraintRight_toRightOf="parent"
+                                                        app:layout_constraintLeft_toLeftOf="parent"
+                                                        app:layout_constraintTop_toTopOf="parent"
+                                                        app:layout_constraintBottom_toBottomOf="parent"
+                                                        android:visibility="gone"/>
+
+                                                </android.support.constraint.ConstraintLayout>
+
+                                            </RelativeLayout>
+
+
+                                        </LinearLayout>
+
+                                    </RelativeLayout>
+
+                                    <ListView
+                                        android:id="@+id/listSelectType"
+                                        android:background="@color/colorMySoftGray"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:fadeScrollbars="false"
+                                        android:fastScrollStyle="@drawable/scrollbar_vertical_thum"
+                                        android:scrollbarTrackVertical="@drawable/scrollbar_vertical_track"
+                                        android:scrollbarThumbVertical="@drawable/scrollbar_vertical_thum"
+                                        android:layout_gravity="start"/>
+
+                                    <ListView
+                                        android:id="@+id/listSelectEngine"
+                                        android:background="@color/colorMySoftGray"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:fadeScrollbars="false"
+                                        android:fastScrollStyle="@drawable/scrollbar_vertical_thum"
+                                        android:scrollbarTrackVertical="@drawable/scrollbar_vertical_track"
+                                        android:scrollbarThumbVertical="@drawable/scrollbar_vertical_thum"
+                                        android:layout_gravity="end"/>
+
+
+                                </android.support.v4.widget.DrawerLayout>
+
+                            </LinearLayout>
+
+                            <ListView
+                                android:id="@+id/listSelectMake"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:scrollbars="vertical"
+                                android:scrollbarStyle="insideOverlay"
+                                android:layout_gravity="start"
+                                android:background="@color/colorMySoftGray"
+                                android:fadeScrollbars="false"
+                                android:fastScrollStyle="@drawable/scrollbar_vertical_thum"
+                                android:scrollbarTrackVertical="@drawable/scrollbar_vertical_track"
+                                android:scrollbarThumbVertical="@drawable/scrollbar_vertical_thum"/>
+
+
+                            <ListView
+                                android:id="@+id/listSelectModel"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:scrollbars="vertical"
+                                android:scrollbarStyle="insideOverlay"
+                                android:background="@color/colorMySoftGray"
+                                android:fadeScrollbars="false"
+                                android:fastScrollStyle="@drawable/scrollbar_vertical_thum"
+                                android:scrollbarTrackVertical="@drawable/scrollbar_vertical_track"
+                                android:scrollbarThumbVertical="@drawable/scrollbar_vertical_thum"
+                                android:layout_gravity="end"/>
+
+
+                        </android.support.v4.widget.DrawerLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layoutOrderReport_Vehicle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+                        <include
+                            layout="@layout/order_report"/>
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/layoutZoomImage_Vehicle"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="start"
+                        android:background="@color/colorMyWhite">
+
+                        <ImageView
+                            android:id="@+id/imgZoomImage_Vehicle"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="0sp"
+                            android:scaleType="matrix" />
+
+                        <Button
+                            android:id="@+id/btnZoomImageClose_Vehicle"
+                            android:layout_width="30sp"
+                            android:layout_height="30sp"
+                            android:text="@string/fa_times"
+                            android:textColor="@color/colorMyMain"
+                            android:padding="0sp"
+                            android:textSize="20sp"
+                            android:background="@color/colorMyTransparent"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true" />
+                    </RelativeLayout>
+
+                </android.support.v4.widget.DrawerLayout>
+
+            </LinearLayout>
+
+            <include layout="@layout/menu_content"/>
+
+        </android.support.v4.widget.DrawerLayout>
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

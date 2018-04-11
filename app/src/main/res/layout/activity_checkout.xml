@@ -1,0 +1,525 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.highgate.highgate.CheckoutActivity">
+
+    <LinearLayout
+        android:id="@+id/layout_Checkout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/colorMyBlack"
+        android:orientation="vertical"
+        android:weightSum="100"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:id="@+id/menu_pos"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="8">
+
+            <include layout="@layout/menubar" />
+        </LinearLayout>
+
+        <android.support.v4.widget.DrawerLayout
+            android:id="@+id/layoutDrawer"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="92">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="92">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0sp"
+                    android:layout_weight="8"
+                    android:background="@color/colorMyMain"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btnRtn_Checkout"
+                        style="@android:style/Widget.DeviceDefault.Button.Borderless"
+                        android:layout_width="50sp"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorMyMain"
+                        android:padding="0sp"
+                        android:text="@string/fa_caret_left"
+                        android:textColor="@color/colorMyBlack"
+                        android:textSize="48sp" />
+
+                    <TextView
+                        android:id="@+id/txtRtn_Checkout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorMyMain"
+                        android:gravity="center"
+                        android:paddingRight="10sp"
+                        android:text="@string/fa_shopping_cart"
+                        android:textColor="@color/colorMyWhite"
+                        android:textSize="28sp" />
+
+                    <TextView
+                        android:id="@+id/txtCheckoutTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@color/colorMyMain"
+                        android:gravity="left|center_vertical"
+                        android:text="CHECKOUT"
+                        android:textColor="@color/colorMyWhite"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="74">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorMyWhite"
+                        android:orientation="vertical"
+                        android:padding="20sp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <Button
+                                android:id="@+id/btnClearFields_Checkout"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="10sp"
+                                android:layout_weight="1"
+                                android:background="@color/colorMyMain"
+                                android:text="Clear all fields"
+                                android:textAllCaps="false"
+                                android:textColor="@color/colorMyWhite"
+                                android:textSize="16sp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="10sp"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="10sp"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/colorMyMain" />
+
+                                <EditText
+                                    android:id="@+id/editReference_Checkout"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="@color/colorMySoftGray"
+                                    android:gravity="left|center_vertical"
+                                    android:hint="Your order reference n&#xb0;"
+                                    android:inputType="textPersonName"
+                                    android:maxLength="20"
+                                    android:paddingLeft="20sp"
+                                    android:textSize="16sp"
+                                    android:textColor="@color/colorMyBlack"
+                                    android:textColorHint="@color/colorMyDarkGray" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="10sp"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="10sp"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/colorMyMain" />
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <Spinner
+                                        android:id="@+id/spnFreight_of_Checkout"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:background="@color/colorMySoftGray"
+                                        android:entries="@array/freight_arrays"
+                                        android:paddingLeft="13sp"
+                                        android:prompt="@string/freight_prompt"
+                                        android:textSize="16sp" />
+
+                                    <TextView
+                                        android:id="@+id/txtFreight_of_Checkout"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:background="@color/colorMySoftGray"
+                                        android:gravity="left|center_vertical"
+                                        android:hint="Click to select a freight method*"
+                                        android:inputType="textPersonName"
+                                        android:paddingLeft="20sp"
+                                        android:textColor="@color/colorMyBlack"
+                                        android:textColorHint="@color/colorMyDarkGray" />
+
+                                </RelativeLayout>
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="10sp"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="10sp"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/colorMyMain" />
+
+                                <EditText
+                                    android:id="@+id/editFName_Checkout"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="@color/colorMySoftGray"
+                                    android:gravity="left|center_vertical"
+                                    android:hint="First Name"
+                                    android:inputType="textPersonName"
+                                    android:textSize="16sp"
+                                    android:paddingLeft="20sp"
+                                    android:textColor="@color/colorMyBlack"
+                                    android:textColorHint="@color/colorMyDarkGray" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="10sp"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="10sp"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/colorMyMain" />
+
+                                <EditText
+                                    android:id="@+id/editLName_Checkout"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="@color/colorMySoftGray"
+                                    android:gravity="left|center_vertical"
+                                    android:hint="Last Name"
+                                    android:inputType="textPersonName"
+                                    android:textSize="16sp"
+                                    android:paddingLeft="20sp"
+                                    android:textColor="@color/colorMyBlack"
+                                    android:textColorHint="@color/colorMyDarkGray" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="10sp"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="10sp"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/colorMyMain" />
+
+                                <EditText
+                                    android:id="@+id/editAddress_Checkout"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="@color/colorMySoftGray"
+                                    android:gravity="left|center_vertical"
+                                    android:hint="Address"
+                                    android:inputType="textPersonName"
+                                    android:textSize="16sp"
+                                    android:paddingLeft="20sp"
+                                    android:textColor="@color/colorMyBlack"
+                                    android:textColorHint="@color/colorMyDarkGray" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="10sp"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="10sp"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/colorMyMain" />
+
+                                <EditText
+                                    android:id="@+id/editSuburb_Checkout"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="@color/colorMySoftGray"
+                                    android:gravity="left|center_vertical"
+                                    android:hint="Suburb"
+                                    android:inputType="textPersonName"
+                                    android:textSize="16sp"
+                                    android:paddingLeft="20sp"
+                                    android:textColor="@color/colorMyBlack"
+                                    android:textColorHint="@color/colorMyDarkGray" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="10sp"
+                                android:layout_weight="1"
+                                android:orientation="horizontal"
+                                android:weightSum="100">
+
+                                <LinearLayout
+                                    android:layout_width="0sp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="50">
+
+                                    <TextView
+                                        android:layout_width="10sp"
+                                        android:layout_height="match_parent"
+                                        android:background="@color/colorMyMain" />
+
+                                    <EditText
+                                        android:id="@+id/editPostCode_Checkout"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:background="@color/colorMySoftGray"
+                                        android:gravity="left|center_vertical"
+                                        android:hint="Post Code"
+                                        android:inputType="textPersonName"
+                                        android:textSize="16sp"
+                                        android:paddingLeft="20sp"
+                                        android:textColor="@color/colorMyBlack"
+                                        android:textColorHint="@color/colorMyDarkGray" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0sp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="30sp"
+                                    android:layout_weight="50">
+
+                                    <TextView
+                                        android:layout_width="10sp"
+                                        android:layout_height="match_parent"
+                                        android:background="@color/colorMyMain" />
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1">
+
+                                        <Spinner
+                                            android:id="@+id/spnState_of_Checkout"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="1"
+                                            android:paddingLeft="13sp"
+                                            android:gravity="left"
+                                            android:background="@color/colorMySoftGray"
+                                            android:textSize="16sp"
+                                            android:entries="@array/state_arrays"/>
+
+                                        <TextView
+                                            android:id="@+id/txtState_of_Checkout"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="1"
+                                            android:background="@color/colorMySoftGray"
+                                            android:gravity="left|center_vertical"
+                                            android:hint="State"
+                                            android:inputType="textPersonName"
+                                            android:textSize="18sp"
+                                            android:textColor="@color/colorMyBlack"
+                                            android:paddingLeft="20sp"
+                                            android:textColorHint="@color/colorMyDarkGray" />
+
+                                    </RelativeLayout>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="10sp"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="10sp"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/colorMyMain" />
+
+                                <EditText
+                                    android:id="@+id/editComment_Checkout"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="@color/colorMySoftGray"
+                                    android:gravity="left|center_vertical"
+                                    android:hint="Comments or freight acc. details"
+                                    android:textSize="16sp"
+                                    android:paddingLeft="20sp"
+                                    android:textColor="@color/colorMyBlack"
+                                    android:textColorHint="@color/colorMyDarkGray" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorMyWhite"
+                            android:text="* Highgate Freight: freight charges will be added following your order being processed."
+                            android:textColor="@color/colorMyBlack"
+                            android:textSize="13sp" />
+
+                    </LinearLayout>
+
+                    <android.support.constraint.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ProgressBar
+                            android:id="@+id/progressBar_Checkout"
+                            style="?android:attr/progressBarStyle"
+                            android:layout_width="70sp"
+                            android:layout_height="70sp"
+                            android:background="@xml/progress_color"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            android:visibility="gone"/>
+
+                    </android.support.constraint.ConstraintLayout>
+
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0sp"
+                    android:layout_weight="10"
+                    android:weightSum="100">
+
+                    <LinearLayout
+                        android:layout_width="0sp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="45"
+                        android:background="@color/colorMyMain"
+                        android:orientation="vertical"
+                        android:paddingBottom="2sp"
+                        android:paddingLeft="20sp"
+                        android:paddingTop="2sp">
+
+                        <TextView
+                            android:id="@+id/textView4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="left|center_vertical"
+                            android:paddingTop="5sp"
+                            android:text="ORDER TOTAL"
+                            android:textColor="@color/colorMyWhite"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/txtTotalPrice_Checkout"
+                            android:layout_width="match_parent"
+                            android:layout_height="0sp"
+                            android:layout_weight="1"
+                            android:gravity="left|center"
+                            android:paddingBottom="0sp"
+                            android:text="$"
+                            android:textColor="@color/colorMyWhite"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/textView2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="0sp"
+                            android:paddingBottom="3sp"
+                            android:text="+GST &amp; DELIVERY"
+                            android:textColor="@color/colorMyWhite"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0sp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="55">
+
+                        <ImageView
+                            android:id="@+id/imgCheckout_Checkout"
+                            android:layout_width="35sp"
+                            android:layout_height="match_parent"
+                            android:background="@color/colorMyDarkGreen"
+                            android:padding="0sp"
+                            android:scaleType="fitXY"
+                            app:srcCompat="@drawable/checkout" />
+
+                        <Button
+                            android:id="@+id/btnCheckout_Checkout"
+                            style="@android:style/Widget.DeviceDefault.Button.Borderless"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/colorMyDarkGreen"
+                            android:text="place order"
+                            android:padding="0sp"
+                            android:textColor="@color/colorMyWhite"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <include layout="@layout/menu_content" />
+
+        </android.support.v4.widget.DrawerLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

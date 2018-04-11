@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.highgate.highgate.DashboardActivity">
+
+    <LinearLayout
+        android:id="@+id/layout_Dashboard"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/colorMyBlack"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageView
+            android:id="@+id/imgLogo_Dashboard"
+            android:layout_width="match_parent"
+            android:layout_height="105dp"
+            android:layout_alignParentTop="true"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/uplogo" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:weightSum="73">
+
+            <LinearLayout
+                android:id="@+id/menu_pos"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="8">
+
+                <include layout="@layout/menubar" />
+
+            </LinearLayout>
+
+            <android.support.v4.widget.DrawerLayout
+                android:id="@+id/layoutDrawer"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="65">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:weightSum="64">
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout2"
+                        android:layout_width="match_parent"
+                        android:layout_height="0sp"
+                        android:layout_weight="15"
+                        android:background="@color/colorMyBlack"
+                        android:paddingTop="15sp"
+                        android:paddingBottom="15sp"
+                        android:paddingLeft="30sp"
+                        android:paddingRight="30sp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0sp"
+                            android:background="@color/colorMyMain"
+                            android:padding="2sp"
+                            android:layout_weight="1">
+
+                            <Button
+                                android:id="@+id/btnSearchSku_Dashboard"
+                                style="@style/Base.Widget.AppCompat.Button.Borderless"
+                                android:layout_width="0sp"
+                                android:layout_height="match_parent"
+                                android:background="@color/colorMyMain"
+                                android:padding="0sp"
+                                android:layout_weight="1"
+                                android:text="search number"
+                                android:textColor="@color/colorMyWhite"
+                                android:textSize="14sp"/>
+
+                            <Button
+                                android:id="@+id/btnSearchWord_Dashboard"
+                                style="@style/Base.Widget.AppCompat.Button.Borderless"
+                                android:layout_width="0sp"
+                                android:layout_height="match_parent"
+                                android:background="@color/colorMyBlack"
+                                android:padding="0sp"
+                                android:layout_weight="1"
+                                android:text="search Word"
+                                android:textColor="@color/colorMyGray"
+                                android:textSize="14sp"/>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0sp"
+                            android:layout_weight="1"
+                            android:layout_marginTop="4sp">
+
+                            <TextView
+                                android:id="@+id/txtSearchImg"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:background="@color/colorMyMain"
+                                android:gravity="center"
+                                android:paddingLeft="5sp"
+                                android:paddingRight="5sp"
+                                android:text="@string/fa_search"
+                                android:textAlignment="center"
+                                android:textColor="@color/colorMyWhite"
+                                android:textSize="16sp" />
+
+                            <EditText
+                                android:id="@+id/editSearch_Dashboard"
+                                android:layout_width="0sp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@color/colorMyWhite"
+                                android:hint="@string/search_sku_hint"
+                                android:singleLine="true"
+                                android:inputType="text"
+                                android:imeOptions="actionGo"
+                                android:paddingLeft="10sp"
+                                android:textColor="@color/colorMyBlack"
+                                android:textColorHint="@color/colorMyDarkGray"
+                                android:textSize="14sp"/>
+
+                            <Button
+                                android:id="@+id/btnGo_Dashboard"
+                                style="@android:style/Widget.DeviceDefault.Button.Borderless"
+                                android:layout_width="50sp"
+                                android:layout_height="match_parent"
+                                android:background="@color/colorMyMain"
+                                android:text="Go"
+                                android:textColor="@color/colorMyWhite"
+                                android:textSize="16sp" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/content_Dashboard"
+                        android:layout_width="match_parent"
+                        android:layout_height="0sp"
+                        android:layout_weight="49"
+                        android:background="@color/colorMyWhite"
+                        android:scaleType="fitXY"
+                        android:padding="30sp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0sp"
+                            android:layout_marginBottom="30sp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            android:weightSum="100">
+
+                            <LinearLayout
+                                android:layout_width="0sp"
+                                android:layout_height="match_parent"
+                                android:layout_marginRight="30sp"
+                                android:layout_weight="50"
+                                android:orientation="vertical"
+                                android:weightSum="100">
+
+                                <TextView
+                                    android:id="@+id/txtVehicle"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0sp"
+                                    android:layout_weight="60"
+                                    android:background="@color/colorMySoftGray"
+                                    android:gravity="center"
+                                    android:text="@string/fa_cogs"
+                                    android:textColor="@color/colorMyMain"
+                                    android:textSize="50sp" />
+
+                                <Button
+                                    android:id="@+id/btnVehicle"
+                                    style="@android:style/Widget.DeviceDefault.Button.Borderless"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0sp"
+                                    android:layout_weight="40"
+                                    android:background="@color/colorMyGray"
+                                    android:padding="0sp"
+                                    android:lineSpacingMultiplier="1.3"
+                                    android:text="VEHICLE PARTS\nGUIDE"
+                                    android:textColor="@color/colorMyBlack"
+                                    android:textSize="15sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0sp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="50"
+                                android:orientation="vertical"
+                                android:weightSum="100">
+
+                                <TextView
+                                    android:id="@+id/txtHose"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0sp"
+                                    android:layout_weight="60"
+                                    android:background="@color/colorMySoftGray"
+                                    android:gravity="center"
+                                    android:text="@string/fa_compress"
+                                    android:textColor="@color/colorMyMain"
+                                    android:textSize="50sp" />
+
+                                <Button
+                                    android:id="@+id/btnHose"
+                                    style="@android:style/Widget.DeviceDefault.Button.Borderless"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0sp"
+                                    android:layout_weight="40"
+                                    android:background="@color/colorMyGray"
+                                    android:padding="0sp"
+                                    android:lineSpacingMultiplier="1.3"
+                                    android:text="HOSE FITTING\nGUIDE"
+                                    android:textColor="@color/colorMyBlack"
+                                    android:textSize="15sp" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0sp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            android:weightSum="100">
+
+                            <LinearLayout
+                                android:layout_width="0sp"
+                                android:layout_height="match_parent"
+                                android:layout_marginRight="30sp"
+                                android:layout_weight="50"
+                                android:orientation="vertical"
+                                android:weightSum="100">
+
+                                <TextView
+                                    android:id="@+id/txtGas"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0sp"
+                                    android:layout_weight="60"
+                                    android:background="@color/colorMySoftGray"
+                                    android:gravity="center"
+                                    android:text="@string/fa_tachometer"
+                                    android:textColor="@color/colorMyMain"
+                                    android:textSize="50sp" />
+
+                                <Button
+                                    android:id="@+id/btnGas"
+                                    style="@android:style/Widget.DeviceDefault.Button.Borderless"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0sp"
+                                    android:layout_weight="40"
+                                    android:background="@color/colorMyGray"
+                                    android:padding="0sp"
+                                    android:lineSpacingMultiplier="1.3"
+                                    android:text="GAS CHARGE\nGUIDE"
+                                    android:textColor="@color/colorMyBlack"
+                                    android:textSize="15sp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0sp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="50"
+                                android:orientation="vertical"
+
+                                android:weightSum="100">
+
+                                <TextView
+                                    android:id="@+id/txtBrowse"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0sp"
+                                    android:layout_weight="60"
+                                    android:background="@color/colorMySoftGray"
+                                    android:gravity="center"
+                                    android:text="@string/fa_user"
+                                    android:textColor="@color/colorMyMain"
+                                    android:textSize="50sp" />
+
+                                <Button
+                                    android:id="@+id/btnBrowse"
+                                    style="@android:style/Widget.DeviceDefault.Button.Borderless"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0sp"
+                                    android:layout_weight="40"
+                                    android:background="@color/colorMyGray"
+                                    android:lineSpacingMultiplier="1.3"
+                                    android:padding="0sp"
+                                    android:text="MY\nACCOUNT"
+                                    android:textColor="@color/colorMyBlack"
+                                    android:textSize="15sp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+                <include layout="@layout/menu_content" />
+
+            </android.support.v4.widget.DrawerLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imgDownLogo_Dashboard"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_above="@+id/imageView4"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/downlogo"
+            tools:layout_editor_absoluteY="0dp"
+            tools:layout_editor_absoluteX="8dp" />
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>
